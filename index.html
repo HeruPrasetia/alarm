@@ -11,18 +11,17 @@
             border-collapse: collapse;
             margin: 50px auto;
         }
-
-        /* Zebra striping */
+        
         tr:nth-of-type(odd) {
             background: #eee;
         }
-
+        
         th {
             background: #3498db;
             color: white;
             font-weight: bold;
         }
-
+        
         td,
         th {
             padding: 10px;
@@ -30,14 +29,12 @@
             text-align: left;
             font-size: 18px;
         }
-
+        
         @media only screen and (max-width: 760px),
-        (min-device-width: 768px) and (max-device-width: 1024px) {
-
+        (min-device-width: 768px) and (max-device-width: "+read_String(50)+"24px) {
             table {
                 width: 100%;
             }
-
             table,
             thead,
             tbody,
@@ -46,24 +43,20 @@
             tr {
                 display: block;
             }
-
             thead tr {
                 position: absolute;
                 top: -9999px;
                 left: -9999px;
             }
-
             tr {
                 border: 1px solid #ccc;
             }
-
             td {
                 border: none;
                 border-bottom: 1px solid #eee;
                 position: relative;
                 padding-left: 50%;
             }
-
             td:before {
                 position: absolute;
                 top: 6px;
@@ -72,16 +65,15 @@
                 padding-right: 10px;
                 white-space: nowrap;
                 content: attr(data-column);
-
                 color: #000;
                 font-weight: bold;
             }
         }
-
+        
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-
+        
         .modal {
             display: none;
             position: fixed;
@@ -98,7 +90,7 @@
             animation-name: fadeIn;
             animation-duration: 0.4s
         }
-
+        
         .modal-content {
             position: fixed;
             bottom: 0;
@@ -109,81 +101,77 @@
             animation-name: slideIn;
             animation-duration: 0.4s
         }
-
+        
         .close {
             color: white;
             float: right;
             font-size: 28px;
             font-weight: bold;
         }
-
+        
         .close:hover,
         .close:focus {
             color: #000;
             text-decoration: none;
             cursor: pointer;
         }
-
+        
         .modal-header {
             padding: 2px 16px;
             background-color: #5cb85c;
             color: white;
         }
-
+        
         .modal-body {
             padding: 2px 16px;
         }
-
+        
         .modal-footer {
             padding: 2px 16px;
             background-color: #5cb85c;
             color: white;
         }
-
+        
         @-webkit-keyframes slideIn {
             from {
                 bottom: -300px;
                 opacity: 0
             }
-
             to {
                 bottom: 0;
                 opacity: 1
             }
         }
-
+        
         @keyframes slideIn {
             from {
                 bottom: -300px;
                 opacity: 0
             }
-
             to {
                 bottom: 0;
                 opacity: 1
             }
         }
-
+        
         @-webkit-keyframes fadeIn {
             from {
                 opacity: 0
             }
-
             to {
                 opacity: 1
             }
         }
-
+        
         @keyframes fadeIn {
             from {
                 opacity: 0
             }
-
             to {
                 opacity: 1
             }
         }
-
+        
         .btn {
             background: #0069eb;
             color: #fff;
@@ -193,7 +181,7 @@
             padding: 8px 10px;
             text-decoration: none;
         }
-
+        
         .input {
             width: 100%;
             border: 2px solid #aaa;
@@ -204,7 +192,7 @@
             box-sizing: border-box;
             transition: .3s;
         }
-
+        
         .input:focus {
             border-color: dodgerBlue;
             box-shadow: 0 0 8px 0 dodgerBlue;
@@ -224,18 +212,77 @@
         </thead>
         <tbody>
             <tr>
-                <td data-column='Jadwal'>Jam 1</td>
-                <td data-column='Waktu'>10.00</td>
-                <td data-column='Alarm'>Alarm 1</td>
+                <td data-column='Jadwal'>"+read_String(40)+"</td>
+                <td data-column='Waktu'>"+read_String(50)+"."+read_String(55)+"</td>
+                <td data-column='Alarm'>"+read_String(60)+"</td>
+                <td data-column='Opsi'><button class='btn' onclick='edit();'>Edit</button> <button class='btn' onclick='tes();'>Tes</button></td>
+            </tr>
+            <tr>
+                <td data-column='Jadwal'>"+read_String(40)+"</td>
+                <td data-column='Waktu'>"+read_String(50)+"."+read_String(55)+"</td>
+                <td data-column='Alarm'>"+read_String(60)+"</td>
+                <td data-column='Opsi'><button class='btn' onclick='edit();'>Edit</button> <button class='btn' onclick='tes();'>Tes</button></td>
+            </tr>
+            <tr>
+                <td data-column='Jadwal'>"+read_String(40)+"</td>
+                <td data-column='Waktu'>"+read_String(50)+"."+read_String(55)+"</td>
+                <td data-column='Alarm'>"+read_String(60)+"</td>
+                <td data-column='Opsi'><button class='btn' onclick='edit();'>Edit</button> <button class='btn' onclick='tes();'>Tes</button></td>
+            </tr>
+            <tr>
+                <td data-column='Jadwal'>"+read_String(40)+"</td>
+                <td data-column='Waktu'>"+read_String(50)+"."+read_String(55)+"</td>
+                <td data-column='Alarm'>"+read_String(60)+"</td>
+                <td data-column='Opsi'><button class='btn' onclick='edit();'>Edit</button> <button class='btn' onclick='tes();'>Tes</button></td>
+            </tr>
+            <tr>
+                <td data-column='Jadwal'>"+read_String(40)+"</td>
+                <td data-column='Waktu'>"+read_String(50)+"."+read_String(55)+"</td>
+                <td data-column='Alarm'>"+read_String(60)+"</td>
+                <td data-column='Opsi'><button class='btn' onclick='edit();'>Edit</button> <button class='btn' onclick='tes();'>Tes</button></td>
+            </tr>
+            <tr>
+                <td data-column='Jadwal'>"+read_String(40)+"</td>
+                <td data-column='Waktu'>"+read_String(50)+"."+read_String(55)+"</td>
+                <td data-column='Alarm'>"+read_String(60)+"</td>
+                <td data-column='Opsi'><button class='btn' onclick='edit();'>Edit</button> <button class='btn' onclick='tes();'>Tes</button></td>
+            </tr>
+            <tr>
+                <td data-column='Jadwal'>"+read_String(40)+"</td>
+                <td data-column='Waktu'>"+read_String(50)+"."+read_String(55)+"</td>
+                <td data-column='Alarm'>"+read_String(60)+"</td>
+                <td data-column='Opsi'><button class='btn' onclick='edit();'>Edit</button> <button class='btn' onclick='tes();'>Tes</button></td>
+            </tr>
+            <tr>
+                <td data-column='Jadwal'>"+read_String(40)+"</td>
+                <td data-column='Waktu'>"+read_String(50)+"."+read_String(55)+"</td>
+                <td data-column='Alarm'>"+read_String(60)+"</td>
+                <td data-column='Opsi'><button class='btn' onclick='edit();'>Edit</button> <button class='btn' onclick='tes();'>Tes</button></td>
+            </tr>
+            <tr>
+                <td data-column='Jadwal'>"+read_String(40)+"</td>
+                <td data-column='Waktu'>"+read_String(50)+"."+read_String(55)+"</td>
+                <td data-column='Alarm'>"+read_String(60)+"</td>
+                <td data-column='Opsi'><button class='btn' onclick='edit();'>Edit</button> <button class='btn' onclick='tes();'>Tes</button></td>
+            </tr>
+            <tr>
+                <td data-column='Jadwal'>"+read_String(40)+"</td>
+                <td data-column='Waktu'>"+read_String(50)+"."+read_String(55)+"</td>
+                <td data-column='Alarm'>"+read_String(60)+"</td>
+                <td data-column='Opsi'><button class='btn' onclick='edit();'>Edit</button> <button class='btn' onclick='tes();'>Tes</button></td>
+            </tr>
+            <tr>
+                <td data-column='Jadwal'>"+read_String(40)+"</td>
+                <td data-column='Waktu'>"+read_String(50)+"."+read_String(55)+"</td>
+                <td data-column='Alarm'>"+read_String(60)+"</td>
                 <td data-column='Opsi'><button class='btn' onclick='edit();'>Edit</button> <button class='btn' onclick='tes();'>Tes</button></td>
             </tr>
         </tbody>
     </table>
-
     <div id='iniModal' class='modal'>
         <div class='modal-content'>
             <div class='modal-header'>
-                <span class='close' onclick='modal('close', '')'>&times;</span>
+                <span class='close' id='close' onclick='close();'>&times;</span>
                 <h2 id='ndasModal'>Modal Header</h2>
             </div>
             <div class='modal-body'>
@@ -246,23 +293,23 @@
             </div>
         </div>
     </div>
-
     <script>
-        function modal(act, Ndas, Awak, Sikel) {
+        function modal(Ndas, Awak, Sikel) {
             var modal = document.getElementById('iniModal');
             var ndas = document.getElementById('ndasModal');
             var awak = document.getElementById('awakModal');
             var sikel = document.getElementById('sikelModal');
-            if (act == 'open') {
-                modal.style.display = 'block';
-                ndas.innerHTML = Ndas;
-                awak.innerHTML = Awak;
-                sikel.innerHTML = Sikel;
-            } else if (act == 'close') {
-                modal.style.display = 'none';
-            }
+            modal.style.display = 'block';
+            ndas.innerHTML = Ndas;
+            awak.innerHTML = Awak;
+            sikel.innerHTML = Sikel;
         }
-        window.onclick = function (event) {
+
+        function close() {
+            document.getElementById('iniModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
             var modal = document.getElementById('iniModal');
             if (event.target == modal) {
                 modal.style.display = 'none';
@@ -270,17 +317,31 @@
         }
 
         function edit(id) {
-            let data = '';
-            data += '<input type=\'number\' placeholder=\'Jam\' class=\'input\' id=\'edtJam\' maxlength=\'2\' minlength=\'2\'><br>';
-            data += '<input type=\'number\' placeholder=\'Menit\' class=\'input\' id=\'edtMenit\' maxlength=\'2\' minlength=\'2\'><br>';
-            data += '<select class=\'input\' id=\'edtStatus\'><option value=\'1\' id=\'aktif\'>Aktif</option><option value=\'0\' id=\'mati\'>Tidak Aktif</option></select>';
-            modal('open', 'Hallo', data, '<p><button class=\'btn\' onclick=\'simpan(id);\'>Simpan</button></p>');
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    modal('Hallo', this.responseText, '<p><button class=\'btn\' onclick=\'simpan(id);\'>Simpan</button></p>');
+                }
+            };
+            xhttp.open('GET', '/edit', true);
+            xhttp.send();
         }
 
-        function simpan(){
-            let jam     = document.getElementById('edtJam').value;
-            let menit   = document.getElementById('edtMenit').value;
-            let status  = document.getElementById('edtStatus').value;
+        function play(lagu) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById('pesan').innerHTML = this.responseText;
+                }
+            };
+            xhttp.open('GET', '/edit', true);
+            xhttp.send();
+        }
+
+        function simpan() {
+            let jam = document.getElementById('edtJam').value;
+            let menit = document.getElementById('edtMenit').value;
+            let status = document.getElementById('edtStatus').value;
         }
     </script>
 </body>
